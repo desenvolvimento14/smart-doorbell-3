@@ -1,0 +1,296 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+
+:root{
+    --background-notas: #ecedf1;
+    --background-yellon: #f9d230;
+    --tittle-yellow: #ffd300;
+    --title: #000000;
+    --title-white: #ffffff;
+    --tittle-gray: #5D5D5D;
+    --sub-tittle-gray: #818181;
+    --tittle-dark-red: #ff4e3b;
+    --tittle-green: #4CCDAF;
+    --tittle-blue: #33BCFF;
+    --text-white: #fff;
+    --text-blue: #266ccd;
+    --paragraph:#000;
+    --paragraph-white: #fff;
+    --paragraph-01: #0000;
+    --paragraph-gray: #5D5D5D;
+    --paragraph-blue: #4C92FF;
+    --paragraph-yellow: #ffd300;
+    --blue-gradient: linear-gradient(0deg,#959fff,#3f94ff);
+    --green-gradient: linear-gradient(0deg,#81d8b0,#02bfae);
+    --red-gradient: linear-gradient(0deg,#ff7260,#ff210e);
+}
+
+@font-face {font-family: CamphorProForXiaoMi-Regular; src: url(../css/fonts/CamphorProForXiaoMi-Regular.woff) format("woff")}
+@font-face {font-family: CamphorProForXiaoMi-Bold; font-weight: 700; src: url(../css/fonts/CamphorProForXiaoMi-Bold.woff) format("woff")}
+@font-face {font-family: CamphorProForXiaoMi-Thin; src: url(./fonts/CamphorProForXiaoMi-Thin.woff) format("woff")}
+@font-face {font-family: CamphorProForXiaoMi-Heavy; font-weight: 900; src: url(./fonts/CamphorProForXiaoMi-Heavy.woff) format("woff")}
+@font-face {font-family: CamphorProForXiaoMi-Medium; src: url(./fonts/CamphorProForXiaoMi-Medium.woff) format("woff")}
+
+.f-heavy {font-family: CamphorProForXiaoMi-Heavy, sans-serif; font-weight: 900}
+.f-regular {font-family: CamphorProForXiaoMi-Regular, sans-serif}
+.f-light {font-family: CamphorProForXiaoMi-Light, sans-serif}
+.f-bold {font-family: CamphorProForXiaoMi-Bold, sans-serif; font-weight: 700}
+.f-medium {font-family: CamphorProForXiaoMi-Medium, sans-serif}
+.f-thin {font-family: CamphorProForXiaoMi-Thin, sans-serif}
+
+@media screen and (min-width:1024px) {main{display: none;}}
+
+@media screen and (min-width:760px) and (max-width:1023px) {main{display: none;}}
+
+@media screen  and (max-width:768px) {
+
+    a:link {text-decoration: none;} 
+
+    .root-xiaomi-smart-doorbell-3 {overflow: hidden; width: 100%;}
+
+    .title_xiaomi-smart-doorbell-3-01-main {font-size: 1.8rem; color: var(--title-white); text-align: center; margin: 0rem 1rem 0rem 1rem; padding: 0.5rem 0rem 0rem 0rem;}
+    .title_xiaomi-smart-doorbell-3-02-main {font-size: 1rem; color: var(--title-white); line-height: 1.5rem; text-align: center; margin: 1rem;}
+    .title_xiaomi-smart-doorbell-3-03-main {font-size: 1rem; color: var(--title); line-height: 1.5rem; text-align: center; margin: 2rem 2rem 0rem 2rem;}
+    .p_xiaomi-smart-doorbell-3-03-main {font-size: 1rem; color: var(--title); line-height: 1.5rem; text-align: center; margin: 1rem 2rem 1rem 2rem;}
+
+
+    .sub-title_xiaomi-smart-doorbell-3-02 {font-size: 1rem; color: var(--title); line-height: 1.5rem; text-align: left; margin: 1rem 1rem 0rem 1rem;}
+    .text_xiaomi-smart-doorbell-3-01 {font-size: 1rem; color: var(--tittle-gray); text-align: center; margin: 0rem 1rem 0rem 1rem;}
+    .text_xiaomi-smart-doorbell-3-02 {font-size: 1rem; color: var(--title-white); text-align: center; margin-bottom: 5rem; max-width: 11rem;}
+    .text_xiaomi-smart-doorbell-3-03 {font-size: 1rem; color: var(--title-white); text-align: center;}
+    .text_xiaomi-smart-doorbell-3-04 {font-size: 0.8rem; color: var(--tittle-gray); text-align: center; margin-top: 1rem;}
+    .text_xiaomi-smart-doorbell-3-05 {font-size: 1rem; color: var(--tittle-gray); text-align: center; margin: 0rem 1rem 1rem 1rem;}
+
+    .notes_xiaomi-smart-doorbell-3 {font-size: 0.8rem; line-height: 1.6rem; color: var(--tittle-gray); text-align: left; margin: 0.5rem 1rem 0rem 1rem; padding: 0rem 1rem 0rem 1rem;} 
+
+    .text_xiaomi-smart-doorbell-3-specs-03 {font-size: 0.8rem; color: var(--text-white); text-align: left; margin: 0.8rem;}
+
+    /*==================================================== GRID ========================================================*/
+
+    .grid_text {
+        margin: 2rem;
+    }
+
+    .grid-bg_01 {
+        margin: 3rem 1rem 1rem 1rem;
+    }
+
+    .grid-bg_02 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 2rem 1rem 2rem 1rem;
+        gap: 0.5rem;
+    }
+
+    .grid-bg_02-01 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-bg_03 {
+        display: grid;
+        justify-content: center;
+    }
+
+    .grid-bg_04 {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 2rem 1rem 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .grid-bg_05 {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1rem;
+    }
+
+    .grid-bg_06 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .grid-bg_06 {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 2rem 1rem 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .grid-bg_06-01 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .grid-bg_06-01-text {
+        max-width: 11rem;
+    }
+
+    /*======================================================= LAYOUT =======================================================*/
+
+    .bg_01 {
+        height: 50rem;
+        background-image: url(../media/Overview_M1080_01.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg_03-01 {
+        height: 18rem;
+        background-image: url(../media/Overview_M1080_02-01.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .bg_03-02 {
+        height: 18rem;
+        background-image: url(../media/Overview_M1080_02-02.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .bg_03-03 {
+        height: 18rem;
+        background-image: url(../media/Overview_M1080_02-03.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .bg_04 {
+        display: grid;
+        background-repeat: no-repeat;
+        background-color: #f4f4f4;
+        background-size: cover;
+    }
+
+    .bg_05 {
+        height: 22rem;
+        background-image: url(../media/Overview_M1080_03.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .bg_06 {
+        height: 46rem;
+        background-image: url(../media/Overview_M1080_04.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg_07 {
+        height: 18rem;
+        background-image: url(../media/Overview_M1080_05.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bg_08 {
+        height: 18rem;
+        background-image: url(../media/Overview_M1080_06.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    .balloon {
+        background: linear-gradient(to right, #c2bfbc, #f0eee5);
+        border-radius: 1rem;
+        width: 12rem;
+        height: 3rem;
+        position: relative;
+        margin: 12rem 1rem 1rem 12rem;
+    }
+      
+    .balloon:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        background-color: transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #c2bfbc;
+        bottom: -20px;
+        left: 12%;
+    }
+
+    .bg_09 {
+        display: grid;
+        background-repeat: no-repeat;
+        background-color: #f4f4f4;
+        background-size: cover;
+    }
+
+    .bg_10 {
+        height: 18rem;
+        background-image: url(../media/Overview_M1080_08.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bg_11 {
+        height: 46rem;
+        background-image: url(../media/Overview_M1080_10.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg_12 {
+        height: 48rem;
+        background-image: url(../media/Overview_M1080_11.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg_13 {
+        height: 46rem;
+        background-image: url(../media/Overview_M1080_12.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg_14 {
+        display: grid;
+        background-repeat: no-repeat;
+        background-color: #f4f4f4;
+        background-size: cover;
+    }
+}
