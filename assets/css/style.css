@@ -55,7 +55,7 @@
 
     .sub-title_xiaomi-smart-doorbell-3-02 {font-size: 1rem; color: var(--title); line-height: 1.5rem; text-align: left; margin: 1rem 1rem 0rem 1rem;}
     .text_xiaomi-smart-doorbell-3-01 {font-size: 1rem; color: var(--tittle-gray); text-align: center; margin: 0rem 1rem 0rem 1rem;}
-    .text_xiaomi-smart-doorbell-3-02 {font-size: 1rem; color: var(--title-white); text-align: center; margin-bottom: 5rem; max-width: 11rem;}
+    .text_xiaomi-smart-doorbell-3-02 {font-size: 1rem; color: var(--title-white); text-align: center; margin-top: -5rem; max-width: 14rem;}
     .text_xiaomi-smart-doorbell-3-03 {font-size: 1rem; color: var(--title-white); text-align: center;}
     .text_xiaomi-smart-doorbell-3-04 {font-size: 0.8rem; color: var(--tittle-gray); text-align: center; margin-top: 1rem;}
     .text_xiaomi-smart-doorbell-3-05 {font-size: 1rem; color: var(--tittle-gray); text-align: center; margin: 0rem 1rem 1rem 1rem;}
@@ -112,7 +112,7 @@
 
     .grid-bg_06 {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         margin: 2rem 1rem 2rem 1rem;
         gap: 1rem;
     }
@@ -139,37 +139,15 @@
         flex-direction: column;
     }
 
+    .bg_03 {
+        display: grid;
+        justify-content: center;
+        align-content: space-around;
+    }
+
     .bg_03-01 {
-        height: 18rem;
-        background-image: url(../media/Overview_M1080_02-01.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-
-    .bg_03-02 {
-        height: 18rem;
-        background-image: url(../media/Overview_M1080_02-02.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-
-    .bg_03-03 {
-        height: 18rem;
-        background-image: url(../media/Overview_M1080_02-03.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        display: grid;
+        margin: 1rem;
     }
 
     .bg_04 {
